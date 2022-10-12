@@ -6,11 +6,11 @@ global.APIs = {
 global.APIKeys = {
 	'https://zenzapis.xyz': '0e92565522',
 }
-global.owner = ['6283861623360']
-global.ownernomer = "6283861623360"
-global.premium = ['6283861623360']
-global.packname = 'Sticker  Fadly'
-global.author = 'Fadly-ID'
+global.owner = ['6282133164875']
+global.ownernomer = "6282133164875"
+global.premium = ['6282133164875']
+global.packname = 'Sticker  Cycology'
+global.author = 'Cycology-ID'
 global.sessionName = 'session'
 global.prefa = ['','!','.','#','&','/']
 global.sp = ''

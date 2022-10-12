@@ -72,7 +72,7 @@ async function startfadly() {
     const fadly = fadlyConnect({
         logger: pino({ level: 'silent' }),
         printQRInTerminal: true,
-        browser: ['YT : ZyrexxOfc','Safari','1.0.0'],
+        browser: ['YT : Cycology_ITTelkomSby','Safari','1.0.0'],
         auth: state
     })
 
@@ -99,7 +99,7 @@ async function startfadly() {
         if (!fadly.public && !mek.key.fromMe && chatUpdate.type === 'notify') return
         if (mek.key.id.startsWith('BAE5') && mek.key.id.length === 16) return
         m = smsg(fadly, mek, store)
-        require("./fadly")(fadly, m, chatUpdate, store)
+        require("./cyco")(fadly, m, chatUpdate, store)
         } catch (err) {
             console.log(err)
         }
@@ -202,7 +202,7 @@ async function startfadly() {
 	for (let i of kon) {
 	    list.push({
 	    	displayName: await fadly.getName(i + '@s.whatsapp.net'),
-	    	vcard: `BEGIN:VCARD\nVERSION:3.0\nN:${await fadly.getName(i + '@s.whatsapp.net')}\nFN:${await fadly.getName(i + '@s.whatsapp.net')}\nitem1.TEL;waid=${i}:${i}\nitem1.X-ABLabel:Ponsel\nitem2.EMAIL;type=INTERNET:okeae2410@gmail.com\nitem2.X-ABLabel:Email\nitem3.URL:https://instagram.com/cak_haho\nitem3.X-ABLabel:Instagram\nitem4.ADR:;;Indonesia;;;;\nitem4.X-ABLabel:Region\nEND:VCARD`
+	    	vcard: `BEGIN:VCARD\nVERSION:3.0\nN:${await fadly.getName(i + '@s.whatsapp.net')}\nFN:${await fadly.getName(i + '@s.whatsapp.net')}\nitem1.TEL;waid=${i}:${i}\nitem1.X-ABLabel:Ponsel\nitem2.EMAIL;type=INTERNET:rayhanzahwans1@gmail.com\nitem2.X-ABLabel:Email\nitem3.URL:https://instagram.com/Rayss868\nitem3.X-ABLabel:Instagram\nitem4.ADR:;;Indonesia;;;;\nitem4.X-ABLabel:Region\nEND:VCARD`
 	    })
 	}
 	fadly.sendMessage(jid, { contacts: { displayName: `${list.length} Kontak`, contacts: list }, ...opts }, { quoted })
